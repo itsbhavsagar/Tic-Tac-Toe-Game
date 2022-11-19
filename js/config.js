@@ -1,4 +1,6 @@
-function openPlayerConfig() {
+function openPlayerConfig(event) {
+    ceditedPlayer = event.target.dataset.playerid; 
+    //if there is "-" dash then use ['player-id']
   playerConfigOverlayElement.style.display = 'block';
   backdropElement.style.display = 'block';
 }
@@ -7,7 +9,7 @@ function closePlayerConfig() {
   playerConfigOverlayElement.style.display = 'none';
   backdropElement.style.display = 'none';
   formElement.firstElementChild.classList.remove('error');
-  errorsOutputElement.textContent = '';
+  errorsOutputElement.textContent = ''; 
 }
 
 function savePlayerConfig(event) {
@@ -19,6 +21,8 @@ function savePlayerConfig(event) {
     // enteredPlayername === ''
     event.target.firstElementChild.classList.add('error');
     errorsOutputElement.textContent = 'Enter a valid name!';
-    return;
+    return; 
   }
+
+
 }
