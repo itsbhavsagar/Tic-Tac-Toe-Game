@@ -1,3 +1,11 @@
+'use Strict';
+
+const gameData = [
+  [0, 0, 0],
+  [0, 0, 0],
+  [0, 0, 0],
+];
+
 let editedPlayer = 0;
 let activePlayer = 0;
 
@@ -25,7 +33,6 @@ const startGameBtnElement = document.getElementById('start-game-btn');
 // const gameFieldElements = document.querySelectorAll('#game-board li');
 const gameFieldElements = document.querySelectorAll('#game-board');
 const activePlayerNameElement = document.getElementById('active-player-name');
-
 
 editPlayer1BtnElement.addEventListener('click', openPlayerConfig);
 editPlayer2BtnElement.addEventListener('click', openPlayerConfig);
