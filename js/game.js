@@ -24,18 +24,15 @@ function selectGameField(event) {
     return;
   }
 
-
-const selectedField = event.target;
-
+  const selectedField = event.target;
 
   event.target.textContent = players[activePlayer].symbol; // players [0]
   event.target.classList.add('disabled');
 
-  const selectedColumn = selectedField.dataset.col -1;
-  const selectedRow = selectedField.dataset.row -1;
+  const selectedColumn = selectedField.dataset.col - 1;
+  const selectedRow = selectedField.dataset.row - 1;
 
-  gameData[selectedRow],[selectedColumn];
+  gameData[selectedRow], [selectedColumn];
 
   switchPlayer();
-
 }
