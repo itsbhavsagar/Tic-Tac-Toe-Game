@@ -1,7 +1,7 @@
 #active-game {
   text-align: center;
   margin: 2rem 0 5rem 0; /* top right bottom left */
-  /* display: none; */
+  display: none;
 }
 
 #game-over {
@@ -10,8 +10,8 @@
   margin: auto;
   padding: 1rem 2rem;
   background-color: rgb(50, 5, 87);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   display: none;
 }
@@ -38,22 +38,22 @@
 }
 
 #game-board li {
-    background-color: rgb(215, 187, 247);
-    border-radius: 2px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
-    font-weight: bold;
+  background-color: rgb(215, 187, 247);
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 #game-board li:hover {
-    background-color: rgb(112, 13, 204);
+  background-color: rgb(112, 13, 204);
 }
 
 #game-board li.disabled {
-    background-color: rgb(112, 13, 204);
-    color: white;
-    cursor: default;
+  background-color: rgb(112, 13, 204);
+  color: white;
+  cursor: default;
 }
