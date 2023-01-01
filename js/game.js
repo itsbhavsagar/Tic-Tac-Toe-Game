@@ -43,7 +43,7 @@ function selectGameField(event) {
   if (event.target.tagName !== 'LI' || gameIsOver) {
     return;
   }
-
+// Let it begun
   const selectedField = event.target;
   const selectedColumn = selectedField.dataset.col - 1;
   const selectedRow = selectedField.dataset.row - 1;
