@@ -53,6 +53,8 @@ function selectGameField(event) {
     return;
   }
 
+
+
   selectedField.textContent = players[activePlayer].symbol;
   selectedField.classList.add('disabled');
 
@@ -64,6 +66,7 @@ function selectGameField(event) {
     endGame(winnerId);
   }
 
+  // Switch player 
   currentRound++;
   switchPlayer();
 }
